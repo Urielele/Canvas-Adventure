@@ -27,5 +27,7 @@ public class BattleHUD : MonoBehaviour
         playerDEAG.text = "DE : " + unit.defense + "\nAG : " + unit.agility;
     }
 
+    
+
 
 }

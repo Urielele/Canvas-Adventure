@@ -1119,6 +1119,7 @@ GameObject:
   - component: {fileID: 559228773}
   - component: {fileID: 559228775}
   - component: {fileID: 559228774}
+  - component: {fileID: 559228776}
   m_Layer: 5
   m_Name: Dialogue Box
   m_TagString: Untagged
@@ -1184,6 +1185,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 559228772}
   m_CullTransparentMesh: 1
+--- !u!114 &559228776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 559228772}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7fe70e543d79b94ba9023f857085c5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueBox: {fileID: 559228772}
+  typingSpeed: 0.1
+  dialogueText: {fileID: 1452547862}
 --- !u!1 &616203118
 GameObject:
   m_ObjectHideFlags: 0
