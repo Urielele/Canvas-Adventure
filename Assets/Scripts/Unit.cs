@@ -4,27 +4,29 @@ using UnityEngine;
 
 public class Unit : MonoBehaviour
 {
-    [Tooltip("Nama unit ini")] public string unitName;
-    [Tooltip("MP unit ini")] public int manaPoint;
-    [Tooltip("HP unit ini")] public int healthPoint;
 
-    //[Header("Information")]   
-    ////public string unitName;
+    [Header("Information")]
+    public string unitName;
 
-    //[Header("Stats")]
-    //public int unitLevel;
-    //public int healthPoint;
-    //public int manaPoint;
+    [Header("Stats")]
+    public int unitLevel;
+    [HideInInspector] public int healthPoint;
+    [HideInInspector] public int manaPoint;
+    public int maxHealthPoint;
+    public int maxManaPoint;
 
-    //[Header("Attributes")]
-    //public int strength;
-    //public int magic;
-    //public int defense;
-    //public int agility;
+    [Header("Attributes")]
+    public int strength;
+    public int magic;
+    public int defense;
+    public int agility;
 
+    
 
-
-
-
+    private void Awake()
+    {
+        healthPoint = maxHealthPoint;
+        manaPoint = maxManaPoint;
+    }
 
 }

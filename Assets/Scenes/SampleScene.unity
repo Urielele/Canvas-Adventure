@@ -243,9 +243,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'HP : 0
+  m_text: 'HP : 00/00
 
-    MP : 0'
+    MP : 00/00'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ea2061a2b43d970458da1c242f4948f0, type: 2}
   m_sharedMaterial: {fileID: -7340069083879622872, guid: ea2061a2b43d970458da1c242f4948f0, type: 2}
@@ -308,7 +308,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 88.65519, w: 0}
+  m_margin: {x: 0, y: 0, z: 57.451057, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -403,7 +403,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 375, y: -78}
+  m_AnchoredPosition: {x: 405, y: -78}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &160968150
@@ -802,8 +802,9 @@ GameObject:
   - component: {fileID: 426121805}
   - component: {fileID: 426121807}
   - component: {fileID: 426121806}
+  - component: {fileID: 426121808}
   m_Layer: 5
-  m_Name: Battle Hud
+  m_Name: Battle HUD
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -870,6 +871,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 426121804}
   m_CullTransparentMesh: 1
+--- !u!114 &426121808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 426121804}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1071d2fdd65502840a76a643af6052b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerName: {fileID: 1627220985}
+  playerHPMP: {fileID: 79941956}
+  playerSTMA: {fileID: 2073395819}
+  playerDEAG: {fileID: 160968150}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1924,9 +1941,11 @@ MonoBehaviour:
   unitLevel: 1
   healthPoint: 50
   manaPoint: 20
-  strength: 6
-  magic: 2
-  defense: 3
+  maxHealthPoint: 50
+  maxManaPoint: 20
+  strength: 1
+  magic: 1
+  defense: 1
   agility: 1
 --- !u!4 &1445362117
 Transform:
@@ -2329,7 +2348,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Player's Name
+  m_text: Player's Name Lv.00
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ea2061a2b43d970458da1c242f4948f0, type: 2}
   m_sharedMaterial: {fileID: -7340069083879622872, guid: ea2061a2b43d970458da1c242f4948f0, type: 2}
@@ -2392,7 +2411,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -15.899979, w: 0}
+  m_margin: {x: 0, y: 0, z: -144.38264, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -2702,7 +2721,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 250, y: -78}
+  m_AnchoredPosition: {x: 295, y: -78}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2073395819
@@ -2812,8 +2831,8 @@ SceneRoots:
   - {fileID: 619394802}
   - {fileID: 540395321}
   - {fileID: 353882808}
+  - {fileID: 1555928158}
   - {fileID: 1445362117}
   - {fileID: 1860294218}
   - {fileID: 1056431547}
   - {fileID: 158342305}
-  - {fileID: 1555928158}
